@@ -1,0 +1,42 @@
+@use "../Variables/variables" as *;
+
+/*-----------------------------------*\
+  #START PORTFOLIO
+\*-----------------------------------*/
+
+.portfolio {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+  background-color: $secondary-color;
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 3rem;
+    margin-top: 8rem;
+
+    .card {
+      background-color: white;
+      img {
+        max-width: 100%;
+      }
+
+      .info {
+        padding: 2rem;
+
+        h3 {
+          margin: 0 0 2rem;
+        }
+
+        p {
+          color: #777;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------------*\
+  #END PORTFOLIO
+\*-----------------------------------*/

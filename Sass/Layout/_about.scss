@@ -1,0 +1,89 @@
+@use "../Variables/variables" as *;
+
+/*-----------------------------------*\
+  #START ABOUT
+\*-----------------------------------*/
+
+.about {
+  padding-top: $section-padding;
+  padding-bottom:calc($section-padding + 5rem);
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+
+    @media (max-width: 991px) {
+      & {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .about-image {
+      position: relative;
+      img {
+        width: 25rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10rem;
+        height: calc(100% + 10rem);
+        background-color: #ebeced;
+        top: -5rem;
+        left: -5rem;
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10rem;
+        height: 29rem;
+        border-bottom: solid 8rem $main-color;
+        border-left: solid 8rem $main-color;
+        top: -5rem;
+        right: -14rem;
+        z-index: -1;
+      }
+
+      @media (max-width: 991px) {
+        &::before,
+        &::after {
+          display:none;
+        }
+
+        & {
+          margin:0 auto 6rem;
+        }
+      }
+    }
+
+    .description {
+      flex-basis: calc(100% - 50rem);
+      p:first-child {
+        font-weight: bold;
+        margin-bottom: 5rem;
+        line-height: 2;
+      }
+
+      hr {
+        border-color: $main-color;
+        width: 50%;
+        display: inline-block;
+      }
+
+      p:last-child {
+        line-height: 2;
+        color: #777;
+        margin: 1.6rem 0;
+      }
+    }
+  }
+}
+
+/*-----------------------------------*\
+  #ًEND ABOUT
+\*-----------------------------------*/

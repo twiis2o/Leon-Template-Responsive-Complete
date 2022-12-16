@@ -1,0 +1,44 @@
+@use "../Variables/variables" as *;
+/*-----------------------------------*\
+  #START LANDING
+\*-----------------------------------*/
+
+.landing {
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  height:calc(100vh - 6.4rem);
+  position:relative;
+
+  .landing-text {
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    text-align:center; 
+    width:32rem;
+    max-width:100%;
+
+    h1 {
+      margin:0;
+      font: {
+        weight:900;
+        size:5rem;
+      }
+      color:$main-color;
+    }
+
+    p {
+      font-size: 1.9rem;
+      line-height: 1.8;
+      margin:1.9rem 0;
+    }
+  }
+
+}
+
+
+
+
+/*-----------------------------------*\
+  #END LANDING
+\*-----------------------------------*/
