@@ -1,0 +1,86 @@
+/* ========== Start Global Rules ==========  */
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: {
+    size: 1.6rem;
+    family: "Work Sans", sans-serif;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: {
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  margin : {
+    right: auto;
+    left: auto;
+  }
+}
+
+/* Small Screen */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 985px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.special-heading {
+  color: #ebeced;
+  text-align: center;
+  font: {
+    size: 10rem;
+    weight: 800;
+  }
+  letter-spacing: -0.3rem;
+}
+
+.special-heading + p {
+  text-align: center;
+  margin: -3rem 0 0;
+  font-size: 2rem;
+  color: #797979;
+}
+
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 6rem;
+  }
+  .special-heading + p {
+    margin: -2rem 0 0;
+  }
+}

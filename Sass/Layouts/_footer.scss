@@ -1,0 +1,17 @@
+@use "../Variables/variables" as *;
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+footer {
+  padding:3rem 1rem;
+  text-align:center;
+  background-color:$thirdly-color;
+  color:white;
+  font-size:1.8rem;
+  span {
+    color:$main-color;
+    font-weight:bold;
+  }
+}

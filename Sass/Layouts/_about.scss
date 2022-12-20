@@ -1,0 +1,86 @@
+@use "../Variables/variables" as *;
+
+/*-----------------------------------*\
+  #About
+\*-----------------------------------*/
+
+.about {
+  padding: {
+    top: $section-padding;
+    bottom: $section-padding + 5rem;
+  }
+  .container {
+    .about-content {
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      .text {
+        flex-basis: calc(100% - 50rem);
+        p:first-child {
+          font-weight: bold;
+          line-height: 2;
+          margin-bottom: 5rem;
+        }
+
+        hr {
+          width: 60%;
+          border: 0.1rem solid $main-color;
+          display: inline-block;
+          margin: 1.6rem 0;
+        }
+
+        p:last-child {
+          line-height: 2;
+          color: #777;
+        }
+      }
+
+      .image {
+        width: 25rem;
+        height: 37rem;
+        position: relative;
+        img {
+          max-width: 100%;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 10rem;
+          height: calc(100% + 8rem);
+          background-color: $secondary-color;
+          top: -4rem;
+          left: -5rem;
+          z-index: -1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10rem;
+          border-left: 7rem solid $main-color;
+          border-bottom: 7rem solid $main-color;
+          height: 30rem;
+          top: -4rem;
+          right: -13rem;
+          z-index: -1;
+        }
+        @media (max-width: 992px) {
+            &::before,
+            &::after {
+            display: none;
+          }
+        }
+      }
+      @media (max-width: 992px) {
+        &{
+          flex-direction: column-reverse;
+          text-align:center;
+        }
+        .image {
+          margin:0 auto 6rem;
+        }
+      }
+    }
+  }
+}

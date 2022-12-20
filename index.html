@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon Template</title>
     <!-- Main Template CSS File -->
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- Font Awesome Library  -->
+    <!-- Font Awesome Library -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,18 +17,18 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
       rel="stylesheet"
     />
-    <title>Leon | Template with SASS</title>
   </head>
   <body>
-    <!-- ========== Header start ========== -->
-    <header class="header">
+    <!-- ========== Start Header ========== -->
+
+    <header>
       <div class="container">
-        <img class="logo" src="./images/logo.png" alt="" />
+        <img src="./images/logo.png" alt="" />
         <div class="links">
-          <div class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="main-icon">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
 
           <ul>
@@ -39,45 +40,49 @@
         </div>
       </div>
     </header>
-    <!-- ========== Header end ========== -->
+
+    <!-- ========== End Header ========== -->
 
     <main>
-      <!-- ========== Landing start ========== -->
+      <!-- ========== Start Landing ========== -->
 
       <div class="landing">
-        <div class="landing-text">
+        <div class="text">
           <h1>Hello There</h1>
-          <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
+          <p>
+            We are Leon - Super Creative & <br />
+            Minimal Agency Web Template
+          </p>
         </div>
       </div>
 
-      <!-- ========== Landing end ========== -->
+      <!-- ========== End Landing ========== -->
 
-      <!-- ========== Features start ========== -->
+      <!-- ========== Start Features ========== -->
 
       <div class="features">
         <div class="container">
-          <div class="col">
-            <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
-            <h2>Tell Us Your Idea</h2>
+          <div class="box">
+            <i class="fas fa-magic fa-3x"></i>
+            <h3>Tell Us Your Idea</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab
             </p>
           </div>
 
-          <div class="col">
+          <div class="box">
             <i class="far fa-gem fa-3x"></i>
-            <h2>We Will Do All The Work</h2>
+            <h3>Tell Us Your Idea</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab
             </p>
           </div>
 
-          <div class="col">
-            <i class="fa-solid fa-earth-asia fa-3x"></i>
-            <h2>Your Product is Worldwide</h2>
+          <div class="box">
+            <i class="fas fa-globe-asia fa-3x"></i>
+            <h3>Tell Us Your Idea</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut lab
@@ -86,11 +91,11 @@
         </div>
       </div>
 
-      <!-- ========== Features end ========== -->
+      <!-- ========== End Features ========== -->
 
-      <!-- ========== Services start ========== -->
+      <!-- ========== Start Services ========== -->
 
-      <div class="services" id="services">
+      <div class="services">
         <div class="container">
           <h2 class="special-heading">Services</h2>
           <p>Don't be busy, be productive</p>
@@ -107,10 +112,11 @@
                   </p>
                 </div>
               </div>
+
               <div class="srv">
                 <i class="fab fa-sketch fa-2x"></i>
                 <div class="text">
-                  <h3>UI & UX</h3>
+                  <h3>UI &amp; UX</h3>
                   <p>
                     Process of enhancing user satisfaction with a product by
                     improving the usability, accessibility, and pleasure
@@ -131,6 +137,7 @@
                   </p>
                 </div>
               </div>
+
               <div class="srv">
                 <i class="fas fa-pencil-ruler fa-2x"></i>
                 <div class="text">
@@ -142,78 +149,77 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
-              <div class="image image-column">
-                <img src="images/services.jpg" alt="" />
+              <div class="image">
+                <img src="./images/services.jpg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ========== Services end ========== -->
+      <!-- ========== End Services ========== -->
 
-      <!-- ========== Portfolio start ========== -->
+      <!-- ========== Start Portfolio ========== -->
 
-      <div class="portfolio" id="portfolio">
+      <div class="portfolio">
         <div class="container">
           <h2 class="special-heading">Portfolio</h2>
           <p>If you do it right, it will last forever.</p>
           <div class="portfolio-content">
-            <div class="card">
-              <img src="images/portfolio-1.jpg" alt="" />
-              <div class="info">
+            <figure>
+              <img src="./images/portfolio-1.jpg" />
+              <figcaption>
                 <h3>Project Here</h3>
                 <p>
-                  My creative ability is very difficult to measure because it
-                  can manifest in so many surprising and.
+                  manifest in so many surprising and. My creative ability is
+                  very difficult to measure because it can
                 </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="images/portfolio-2.jpg" alt="" />
-              <div class="info">
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img src="./images/portfolio-2.jpg" />
+              <figcaption>
                 <h3>Project Here</h3>
                 <p>
-                  My creative ability is very difficult to measure because it
-                  can manifest in so many surprising and.
+                  manifest in so many surprising and. My creative ability is
+                  very difficult to measure because it can
                 </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="images/portfolio-3.jpg" alt="" />
-              <div class="info">
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img src="./images/portfolio-3.jpg" />
+              <figcaption>
                 <h3>Project Here</h3>
                 <p>
-                  My creative ability is very difficult to measure because it
-                  can manifest in so many surprising and.
+                  manifest in so many surprising and. My creative ability is
+                  very difficult to measure because it can
                 </p>
-              </div>
-            </div>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
 
-      <!-- ========== Portfolio End ========== -->
+      <!-- ========== End Portfolio ========== -->
 
-      <!-- ========== About Start ========== -->
+      <!-- ========== Start About ========== -->
 
-      <div class="about" id="about">
+      <div class="about">
         <div class="container">
           <h2 class="special-heading">About</h2>
           <p>Less is more work</p>
           <div class="about-content">
-            <div class="about-image">
-              <img src="./images/about.jpg" alt="" />
-            </div>
-            <div class="description">
+            <div class="text">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                 nemo neque voluptate tempora velit cum non, fuga vitae
                 architecto delectus sed maxime rerum impedit aliquam obcaecati,
                 aut excepturi iusto laudantium!
               </p>
+
               <hr />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
@@ -222,23 +228,27 @@
                 inventore esse, alias, sed quo officia?
               </p>
             </div>
+            <div class="image">
+              <img src="./images/about.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- ========== About End ========== -->
+      <!-- ========== End About ========== -->
 
-      <!-- ========== Contact Start ========== -->
+      <!-- ========== Start Contact ========== -->
 
-      <div class="contact" id="contact">
+      <div class="contact">
         <div class="container">
           <h2 class="special-heading">Contact</h2>
           <p>We are born to create</p>
-
           <div class="contact-content">
-            <p>Feel free to drop us a line at:</p>
-            <a href="mailto:twiistwiis0@gmail.com">twiistwiis0@gmail.com</a>
-            <div class="social-media">
+            <p class="label">Feel free to drop us a line at:</p>
+            <a href="mailto:leonagency@mail.com" class="link"
+              >leonagency@mail.com</a
+            >
+            <div class="social">
               Find Us On Social Networks
               <i class="fab fa-youtube"></i>
               <i class="fab fa-facebook-f"></i>
@@ -248,21 +258,13 @@
         </div>
       </div>
 
-      <!-- ========== Contact End ========== -->
+      <!-- ========== End Contact ========== -->
     </main>
 
-    <!-- ========== Footer Start ========== -->
+    <!-- ========== Start Footer ========== -->
 
-    <footer class="footer">© 2021 <span>Leon</span> All Right Reserved</footer>
+    <footer>© 2021 <span>Leon</span> All Right Reserved</footer>
 
-    <!-- ========== Footer End ========== -->
-
-    <script>
-      // const autoScroll = () => {
-      //   window.scrollBy(0, 500);
-      //   let scrolldelay = setTimeout(autoScroll, 10);
-      // };
-      // autoScroll();
-    </script>
+    <!-- ========== End Footer ========== -->
   </body>
 </html>

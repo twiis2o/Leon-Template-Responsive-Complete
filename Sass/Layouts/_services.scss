@@ -1,0 +1,75 @@
+@use "../Variables/variables" as *;
+
+/*-----------------------------------*\
+  #SERVICES
+\*-----------------------------------*/
+
+.services {
+  padding: {
+    top: $section-padding;
+    bottom: $section-padding;
+  }
+
+  .container {
+    .services-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      gap: 3rem;
+      margin-top: 10rem;
+
+      .col {
+        .srv {
+          display: flex;
+          margin-bottom: 4rem;
+          i {
+            flex-basis: 6rem;
+            color: $main-color;
+          }
+          .text {
+            flex: 1;
+
+            h3 {
+              margin: 0 0 2rem;
+            }
+
+            p {
+              line-height: 1.6;
+              font-weight: 300;
+              color: #444;
+            }
+          }
+          @media (max-width: 768px) {
+            & {
+              text-align: center;
+              flex-direction: column;
+            }
+          }
+        }
+        .image {
+          position: relative;
+          text-align: center;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 10rem;
+            height: calc(100% + 8rem);
+            background-color: $thirdly-color;
+            top: -4rem;
+            right: 0;
+            z-index: -1;
+          }
+
+          img {
+            width: 26rem;
+          }
+          @media (max-width: 1199px) {
+            & {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
